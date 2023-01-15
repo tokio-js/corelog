@@ -23,7 +23,6 @@
   "types": "./one-liner/lib.d.ts",
   "type": "commonjs",
   "dependencies": {
-    "@tokio-js/trutrace": "^1.0.0",
     "@types/node": "^18.11.18"
   }
 }
