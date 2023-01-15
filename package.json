@@ -19,8 +19,8 @@
     "url": "https://github.com/tokio-js/corelog/issues"
   },
   "homepage": "https://github.com/tokio-js/corelog#readme",
-  "main": "./one-liner/lib.js",
-  "types": "./one-liner/lib.d.ts",
+  "main": "./src/lib.js",
+  "types": "./src/lib.d.ts",
   "type": "commonjs",
   "dependencies": {
     "@types/node": "^18.11.18"

@@ -1,4 +1,4 @@
-import * as corelog from "../one-liner/lib";
+import * as corelog from "../src/lib";
 import * as tru from "@tokio-js/trutrace";
 
 corelog.init("corelogs");

@@ -24,3 +24,4 @@ export declare function getStatus(): boolean;
  * @returns {void}
  */
 export declare function setStatus(load: boolean): void;
+//# sourceMappingURL=lib.d.ts.map
