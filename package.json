@@ -1,0 +1,29 @@
+{
+  "name": "@tokio-js/trutrace",
+  "version": "1.0.0",
+  "description": "Trace everything",
+  "author": "AtomicGamer9523",
+  "license": "MIT",
+  "scripts": {
+    "build": "nj-cli build",
+    "release": "nj-cli build --release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tokio-js/corelog.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/tokio-js/corelog/issues"
+  },
+  "homepage": "https://github.com/tokio-js/corelog#readme",
+  "main": "./one-liner/lib.js",
+  "types": "./one-liner/lib.d.ts",
+  "type": "commonjs",
+  "dependencies": {
+    "@tokio-js/trutrace": "^1.0.0",
+    "@types/node": "^18.11.18"
+  }
+}
