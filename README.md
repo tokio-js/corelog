@@ -1,31 +1,36 @@
-# TruTrace
+# CoreLog
 
-## Trace everything
+## Logs on an other level
 
 ### [Examples](./examples/)
 
 ### Exmaple (TS)
 
 ```ts
+import * as corelog from "@tokio-js/corelog";
 import * as tru from "@tokio-js/trutrace";
 
-function tracer(msg: string){// Not traced
-    const traces = tru.trace();
-    const [simple] = tru.format(msg, "INF", traces, new Date());
-    console.log(simple);
+corelog.init("corelogs");
+
+function trace(msg: any) {
+    const trutrace = tru.trace();
+    const traces = tru.format(msg, "TRC", trutrace, new Date());
+    console.log(traces[0]);
+    corelog.log("CORE", traces[1]);
+    corelog.log("TOP", traces[2]);
 }
 
-function internal_call() {// Internal Call
-    tracer("Internal Call");
-}
-
-function top_level_call() {
-    internal_call();
+function add(x: number, y: number): number {
+    let result = x + y;
+    trace("Added " + x + " and " + y + " to get " + result);
+    return result;
 }
 
 function main() {
-    top_level_call();
+    let result = add(1, 2);
+    console.log("Result: " + result);
 }
 
-main();// Top Level Call
+main();
+
 ```

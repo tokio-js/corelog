@@ -1,7 +1,7 @@
 {
-  "name": "@tokio-js/trutrace",
+  "name": "@tokio-js/corelog",
   "version": "1.0.0",
-  "description": "Trace everything",
+  "description": "Logs on an other level",
   "author": "AtomicGamer9523",
   "license": "MIT",
   "scripts": {
