@@ -1,6 +1,6 @@
 {
   "name": "@tokio-js/corelog",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Logs on an other level",
   "author": "AtomicGamer9523",
   "license": "MIT",

@@ -1,5 +1,5 @@
 const corelog = require("../src/lib");
-const tru = require("@tokio-js/trutrace");
+const tru = require("trutrace");
 
 corelog.init("corelogs");
 

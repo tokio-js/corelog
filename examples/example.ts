@@ -1,5 +1,5 @@
 import * as corelog from "../src/lib";
-import * as tru from "@tokio-js/trutrace";
+import * as tru from "trutrace";
 
 corelog.init("corelogs");
 
